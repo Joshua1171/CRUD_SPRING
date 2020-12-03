@@ -41,6 +41,10 @@ public class PersonaController {
 	    			persona.setEmail(p.getEmail());
 	    			return ipersona.save(p);
 	    }
+	@DeleteMapping("personas/{id}")
+    public void eliminar(@PathVariable Long id){
+        ipersona.deleteById(id);
+    }
 	    
 	    
 
