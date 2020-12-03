@@ -39,7 +39,7 @@ public class PersonaController {
 	    			persona.setName(p.getName());
 	    			persona.setLastname(p.getLastname());
 	    			persona.setEmail(p.getEmail());
-	    			return persona;
+	    			return ipersona.save(p);
 	    }
 	    
 	    
